@@ -105,8 +105,8 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      ORDER BY students.id
       WHERE grade = 10
+      ORDER BY students.id
       LIMIT 1
     SQL
 

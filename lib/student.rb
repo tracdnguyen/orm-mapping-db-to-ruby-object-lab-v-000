@@ -107,7 +107,7 @@ class Student
       FROM students
       ORDER BY id
       WHERE grade = 10
-      LIMIT 1 DESC
+      LIMIT 1 ASC
     SQL
 
     DB[:conn].execute(sql).map do |row|

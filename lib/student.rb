@@ -107,7 +107,7 @@ class Student
       FROM students
       GROUP BY students.id
       WHERE grade = 10
-      LIMIT 1
+      LIMIT 1 DESC
     SQL
 
     DB[:conn].execute(sql).map do |row|
